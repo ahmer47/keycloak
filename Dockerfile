@@ -17,5 +17,5 @@ RUN keytool -genkeypair -storepass password -storetype PKCS12 -keyalg RSA -keysi
 ENV KC_DB_URL=jdbc:postgresql://containers-us-west-34.railway.app:5823/railway
 ENV KC_DB_USERNAME=postgres
 ENV KC_DB_PASSWORD=S322ddoi2JZMKS6pSTgs
-ENV KC_HOSTNAME=localhost
+ENV KC_HOSTNAME=https://keycloak-production-e234.up.railway.app
 ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
